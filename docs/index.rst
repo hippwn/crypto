@@ -11,9 +11,8 @@ the project documentation to know more.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
-
-
+   :caption: Content:
+      crypto
 
 Indices and tables
 ==================
@@ -21,3 +20,4 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
