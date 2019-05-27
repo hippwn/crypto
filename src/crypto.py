@@ -101,14 +101,13 @@ def vigenere_Kasiski(text, lang):
         Turkish, Swedish, Polish, Dutch, Danish, Icelandic, Finnish, Czech
 
     Exemple:
-    --------
+        Consider the following::
+            plain:      .....DES...........DES.......DES.........DES....DES.....
+            key:        ABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCD
+            chipher:    .....EGV.....................EGV.........EGV............
+            distance:         <--------- 24 --------> <--- 12 -->
 
-        plain:      .....DES...........DES.......DES.........DES....DES.....
-        key:        ABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCD
-        chipher:    .....EGV.....................EGV.........EGV............
-        distance:         <--------- 24 --------> <--- 12 -->
-
-    Since GCD(24, 12) = 4, the length of the key is probably 4. 
+        Since GCD(24, 12) = 4, the length of the key is probably 4. 
 
     """
     lang = lang.lower()

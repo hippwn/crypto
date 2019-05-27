@@ -16,11 +16,9 @@
 
 import sys
 import os
-import shlex
 
 ## Make your modules available in sys.path
-sys.path.insert(0, os.path.join(os.path.abspath(
-    os.path.dirname(os.path.dirname(__file__))), 'src'))
+sys.path.insert(0, os.path.abspath('../src'))
 
 # -- Project information -----------------------------------------------------
 
