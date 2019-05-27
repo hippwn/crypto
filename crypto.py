@@ -37,14 +37,14 @@ def get_offset(text, lang):
     return o[0]
 
 def vigenere(text, key_size, lang='french'):
-    ciphers = ([], [], [], [])
-    plains = ([], [], [], [])
+    ciphers = [""] * key_size
+    plains = [""] * key_size
 
     for i in range(len(text)):
-        ciphers[i % key_size].append(text[i])
+        ciphers[i % key_size] += text[i]
     for i in range(len(ciphers)):
         offset = get_offset(ciphers[i], lang)
-        plains[i].extend([rot(t, offset) for t in ciphers[i]])
+        plains[i] += ''.join([rot(t, offset) for t in ciphers[i]])
 
     plaintexts = tuple([''.join(p) for p in plains])
     plain = ""
